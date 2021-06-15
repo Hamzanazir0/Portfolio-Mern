@@ -140,7 +140,11 @@ body pre {
 }
 
 .header-logo a img {
-  width: 40pt;
+  width: 100pt;
+}
+
+.header-logo img:hover {
+  filter: brightness(100);
 }
 
 .menu-holder {
