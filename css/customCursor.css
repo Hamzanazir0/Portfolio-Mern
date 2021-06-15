@@ -1,5 +1,5 @@
 body {
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .cursor {
@@ -19,6 +19,7 @@ body {
   width: 20px;
   height: 20px;
   position: absolute;
+  z-index: 1000000;
   border: 8px solid gray;
   border-radius: 50%;
   opacity: 0.5;
@@ -26,7 +27,7 @@ body {
   left: -8px;
   animation: cursorAnim2 0.5s infinite alternate;
 }
-
+/* 
 @keyframes cursorAnim {
   from {
     transform: scale(1);
@@ -61,4 +62,4 @@ body {
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid #ff1e5c;
-}
+} */
