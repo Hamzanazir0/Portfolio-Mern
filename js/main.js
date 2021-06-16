@@ -327,6 +327,7 @@ function loadMemberContent(memberID) {
 
 var portfolioItemContentLoadOnClick = function () {
   $(".ajax-portfolio").on("click", function (e) {
+    console.log("Portfolio CLicked");
     e.preventDefault();
     var portfolioItemID = $(this).data("id");
     $(this).addClass("animate-plus");
