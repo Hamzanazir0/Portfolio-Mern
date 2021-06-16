@@ -27,7 +27,7 @@ body {
   left: -8px;
   animation: cursorAnim2 0.5s infinite alternate;
 }
-/* 
+
 @keyframes cursorAnim {
   from {
     transform: scale(1);
@@ -62,4 +62,4 @@ body {
 .expand {
   animation: cursorAnim3 0.5s forwards;
   border: 1px solid #ff1e5c;
-} */
+}
