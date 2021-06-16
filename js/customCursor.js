@@ -1,18 +1,17 @@
-// jQuery(document).ready(function () {
-//   const cursor = document.querySelector(".cursor");
+$(document).ready(function () {
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
+  const cursor = $(".cursor");
 
-//   document.addEventListener("mousemove", (e) => {
-//     cursor.setAttribute(
-//       "style",
-//       "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-//     );
-//   });
+  document.addEventListener("mousemove", (e) => {
+    cursor.css("top", e.pageY - 10);
+    cursor.css("left", e.pageX - 10);
+  });
 
-//   document.addEventListener("click", () => {
-//     cursor.classList.add("expand");
+  document.addEventListener("click", () => {
+    cursor.addClass("expand");
 
-//     setTimeout(() => {
-//       cursor.classList.remove("expand");
-//     }, 500);
-//   });
-// });
+    setTimeout(() => {
+      cursor.removeClass("expand");
+    }, 500);
+  });
+});
