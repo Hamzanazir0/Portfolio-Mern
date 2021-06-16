@@ -7,6 +7,11 @@ $(document).ready(function () {
     cursor.css("left", e.pageX - 10);
   });
 
+  document.addEventListener("scroll", (e) => {
+    cursor.css("top", e.pageY - 10);
+    cursor.css("left", e.pageX - 10);
+  });
+
   document.addEventListener("click", () => {
     cursor.addClass("expand");
 
