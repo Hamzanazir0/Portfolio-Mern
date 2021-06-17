@@ -1754,6 +1754,10 @@ footer ul {
   .skill-text {
     width: calc(100% - 110px);
   }
+
+  .skill-percent {
+    font-size: 40pt;
+  }
 }
 
 @media screen and (max-width: 400px) {
