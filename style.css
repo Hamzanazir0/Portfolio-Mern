@@ -1127,6 +1127,10 @@ body .sm-clean li.current_page_item > a {
   line-height: 100%;
 }
 
+#team-member-1 {
+  transform: translateX(50%);
+}
+
 .team-load-content-holder {
   opacity: 0;
   transform: translateY(70px);
