@@ -1719,6 +1719,10 @@ footer ul {
     margin: 0 auto;
     line-height: 25px;
   }
+
+  #team-member-1 {
+    transform: translateX(0%);
+  }
 }
 
 @media screen and (max-width: 650px) {
