@@ -268,7 +268,7 @@ function memberContentLoadOnClick() {
 function loadMemberContent(memberID) {
   $.ajax({
     url: $('.ajax-member-content[data-id="' + memberID + '"]').attr("href"),
-    type: "GET",
+    type: "POST",
     success: function (html) {
       var getHtml = $(html).find(".member-item-wrapper").html();
       $(".team-load-content-holder").append(
