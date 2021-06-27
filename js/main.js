@@ -268,7 +268,7 @@ function memberContentLoadOnClick() {
 function loadMemberContent(memberID) {
   $.ajax({
     url: $('.ajax-member-content[data-id="' + memberID + '"]').attr("href"),
-    type: "POST",
+    type: "GET",
     success: function (html) {
       var getHtml = $(html).find(".member-item-wrapper").html();
       $(".team-load-content-holder").append(
@@ -354,7 +354,7 @@ var portfolioItemContentLoadOnClick = function () {
 function loadPortfolioItemContent(portfolioItemID) {
   $.ajax({
     url: $('.ajax-portfolio[data-id="' + portfolioItemID + '"]').attr("href"),
-    type: "POST",
+    type: "GET",
     success: function (html) {
       var getPortfolioItemHtml = $(html).find(".portfolio-item-wrapper").html();
       $(".portfolio-load-content-holder").append(
@@ -480,7 +480,7 @@ var SendMail = function () {
       message: $("#message").val(),
     };
     $.ajax({
-      type: "POST",
+      type: "GET",
       url: "php/sendMail.php",
       data: params,
       success: function (response) {
